@@ -1,0 +1,13 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: smart-school
+  host: smart-school
+  disk_quota: 1024M
+  services:
+  - smart-school-cloudantNoSQLDB
+  env:
+    NODE_RED_USERNAME: talwinder
+    NODE_RED_PASSWORD: talwinder123
